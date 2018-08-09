@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background: url("../img/qiang.png");
+    background-size: contain;
+}
+.screen{
+    width: 100%;
+    height: 7.94rem;
+    background: url("../img/scen.png");
+    background-size: contain;
+    position: relative;
+}
+.screen .letter{
+    width: 0.53rem;
+    height: 0.77rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 0.35rem;
+    background-size: contain;
+}
+.keyBox{
+    width: 100%;
+    height: 4.45rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: url("../img/Key.png");
+    background-size: contain;
+}
+.keyBox .keyCon{
+    width: 7.02rem;
+    height: 4rem;
+    background: rgba(34,102,212,0.8);
+    margin: 0.22rem auto;
+    font-size: 0.35rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.keyBox .keyCon .button{
+    width: 0.5rem;
+    height: 0.8rem;
+    background-image: url("../img/Letter.png");
+    background-size: contain;
+    line-height: 0.8rem;
+    text-align: center;
+    margin-left: 0.2rem;
+    box-shadow: 0.05rem 0.08rem 0.1rem 0 rgba(0,0, 0, 0.7);
+}
+.keyBox .keyCon .button:nth-child(1){
+    margin-left: 0rem;
+}
+.keyBox .keyCon .button:nth-child(19){
+    margin-right: 0.3rem;
+}
+.cloud{
+    width: 4.95rem;
+    height: 0.56rem;
+    background-image: url("../img/clound_06.png");
+    background-size: contain;
+    position: fixed;
+    top: 0.7rem;
+    left: 0.25rem;
+    animation: boxia 1.5s linear infinite alternate;
+    z-index: 100;
+}
+@keyframes boxia{
+    to{
+        transform: translateX(2rem);
+    }
+}
+.info{
+    width: 1.35rem;
+    height: 4.25rem;
+    position: fixed;
+    right: 0.25rem;
+    top: 2.4rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.info .life{
+    width: 1.21rem;
+    height: 1.21rem;
+    background-image: url("../img/Health.png");
+    background-size: contain;
+    margin-bottom: 0.2rem;
+    margin: 0.15rem auto;
+    line-height: 0.8rem;
+}
+.info .score{
+    width: 1.21rem;
+    height: 1.21rem;
+    background-image: url("../img/Point.png");
+    background-size: contain;
+    margin: 0.15rem auto;
+    line-height: 0.8rem;
+}
+.info .start{
+    width: 0.98rem;
+    height: 0.98rem;
+    background-image: url("../img/Pause.png");
+    background-size: contain;
+    margin: 0.3rem auto 0;
+}
+.end{
+    width: 0.98rem;
+    height: 0.98rem;
+    background-image: url("../img/Play.png");
+    background-size: contain;
+    margin: 0.3rem auto 0;
+}
+#bgmusic{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: fixed;
+    top: 0.15rem;
+    right: 0.3rem;
+}
+.Astart{
+    background-image: url("../img/Aplay.png");
+    background-size: contain;
+}
+.Aend{
+    background-image: url("../img/Apause.png");
+    background-size: contain;
+}
+.gameover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.tip{
+    width: 4.3rem;
+    height: 4.5rem;
+    margin: 1rem auto;
+    background-image: url("../img/gameover.png");
+    background-size: contain;
+    position: relative;
+}
+.tip span{
+    font-size: 0.3rem;
+    position: absolute;
+    left: 2.15rem;
+    top: 2.8rem;
+    color: red;
+}
+.tip .resatrt{
+    width: 2.63rem;
+    height: 0.6rem;
+    background-image: url("../img/btn.png");
+    background-size: contain;
+    position: absolute;
+    left: 0.83rem;
+    top: 3.44rem;
+}
